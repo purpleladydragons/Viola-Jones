@@ -16,8 +16,6 @@ numberofimages = numberofnonfaces + numberoffaces
 rows = 24
 cols = 24
 
-#THIS IS ALL LEARNING----------------
-#LEAVE DISABLED UNLESS YOU UPDATE TRAINING SET 
 
 
 
@@ -252,6 +250,9 @@ def findfaces(colorimage,saveas='output.jpg'):
     data = list(tuple(pixel) for pixel in color)
     im.putdata(data)
     im.save(saveas)
+    
+#THIS IS ALL LEARNING----------------
+#LEAVE DISABLED UNLESS YOU UPDATE TRAINING SET 
 
 if ISLEARNING:
     try:
